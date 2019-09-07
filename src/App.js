@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import AppRouter from "./AppRouter";
+import { ThemeProvider } from "@material-ui/styles";
+import { createMuiTheme } from "@material-ui/core";
+import indigo from "@material-ui/core/colors/indigo";
+import "typeface-roboto";
+
+const theme = createMuiTheme({
+  palette: {
+    primary: indigo,
+    secondary: {
+      main: "#1a237e",
+      light: "#1a237e",
+      dark: "#1a237e",
+      contrastText: "#1a237e"
+    }
+  }
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <AppRouter />
+    </ThemeProvider>
   );
 }
 
