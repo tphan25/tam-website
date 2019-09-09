@@ -1,0 +1,66 @@
+.appBar {
+  height: 10vh;
+}
+li a:hover {
+  background-color: #111;
+}
+.routeButton {
+  display: inline-block;
+  text-decoration: none;
+  height: 10vh; /* Consider a more elegant solution than equal height*/
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.routeButton:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+.nameButton {
+  display: inline-block;
+  text-decoration: none;
+  height: 10vh; /* Consider a more elegant solution than equal height*/
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.nameButton:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+.routeText {
+  position: relative;
+  top: calc(50% - 0.5em);
+  color: white;
+}
+.toolbar {
+  height: 100%;
+}
+.left {
+  position: absolute;
+  left: 0;
+  padding-left: 20px;
+}
+.right {
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #c5cae9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7986cb;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5c6bc0;
+}
