@@ -36,6 +36,13 @@
   transition: 0.5s;
   color: #039be5;
 }
+.resume {
+  color: white;
+}
+.resume :hover {
+  transition: 0.5s;
+  color: #26a69a;
+}
 .links {
   font-style: italic;
 }

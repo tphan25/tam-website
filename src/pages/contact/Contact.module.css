@@ -19,6 +19,14 @@
   display: inline-block;
   padding-right: 12px;
 }
+.resume {
+  color: white;
+  text-decoration: none;
+}
+.resume :hover {
+  transition: 0.5s;
+  color: #26a69a;
+}
 .linkText {
   font-style: italic;
   display: inline-block;

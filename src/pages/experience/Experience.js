@@ -63,6 +63,7 @@ export default function Experience() {
     <Fragment>
       <Box display="flex" flexDirection="column" className={classes.container}>
         <ScrollToTop />
+
         <Grid container>
           <Grid xs={12}>
             <Typography
@@ -70,6 +71,11 @@ export default function Experience() {
               className={[classes.text, classes.header].join(" ")}
             >
               What the heck has Tam done?
+            </Typography>
+            <Typography className={classes.linkText} variant="h3">
+              <a href="https://tphan25.github.io" className={classes.link}>
+                Here's a copy of my resume if you'd rather look at that!
+              </a>
             </Typography>
             <Typography className={classes.text} variant="h3">
               Check out my resume for a brief list of my skills, and maybe take
@@ -210,7 +216,7 @@ export default function Experience() {
           </Grid>
         </Grid>
         <Grid item xs={12}>
-          <Typography className={classes.text} variant="h2">
+          <Typography className={classes.text} variant="h3">
             This is a summary of my actual work experiences (or what I would
             consider related experience) - it does not include every detail, and
             you should take a peek at my resume to find more{" "}
