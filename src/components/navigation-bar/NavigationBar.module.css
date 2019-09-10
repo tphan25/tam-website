@@ -12,7 +12,7 @@ li a:hover {
   padding-right: 10px;
 }
 .routeButton:hover {
-  background-color: black;
+  background-color: #3f51b5;
   transition: 0.5s;
 }
 .nameButton {
@@ -23,7 +23,7 @@ li a:hover {
   padding-right: 10px;
 }
 .nameButton:hover {
-  background-color: black;
+  background-color: #3f51b5;
   transition: 0.5s;
 }
 .routeText {

@@ -14,6 +14,43 @@ const theme = createMuiTheme({
       light: "#1a237e",
       dark: "#1a237e",
       contrastText: "#1a237e"
+    },
+    white: {
+      main: "#ffffff"
+    }
+  },
+  typography: {
+    h1: {
+      "@media (max-width:960px)": {
+        fontSize: "3rem"
+      },
+      "@media (min-width:960px)": {
+        fontSize: "6rem"
+      }
+    },
+    h2: {
+      "@media (max-width:960px)": {
+        fontSize: "2rem"
+      },
+      "@media (min-width:960px)": {
+        fontSize: "4rem"
+      }
+    },
+    h3: {
+      "@media (max-width:960px)": {
+        fontSize: "1.5rem"
+      },
+      "@media (min-width:960px)": {
+        fontSize: "3rem"
+      }
+    },
+    h4: {
+      "@media (max-width:960px)": {
+        fontSize: "1rem"
+      },
+      "@media (min-width:960px)": {
+        fontSize: "2rem"
+      }
     }
   }
 });
