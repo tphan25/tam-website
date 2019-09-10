@@ -40,7 +40,7 @@
   font-style: italic;
   color: white;
 }
-.linkContainer :hover {
+.links :hover {
   transition: 0.5s;
   color: #039be5;
 }

@@ -72,8 +72,8 @@ export default function Experience() {
             >
               What the heck has Tam done?
             </Typography>
-            <Typography className={classes.linkText} variant="h3">
-              <a href="https://tphan25.github.io" className={classes.link}>
+            <Typography className={classes.links} variant="h3">
+              <a href="https://tphan25.github.io" className={classes.links}>
                 Here's a copy of my resume if you'd rather look at that!
               </a>
             </Typography>
