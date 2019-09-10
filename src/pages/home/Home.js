@@ -10,6 +10,11 @@ export default class Home extends Component {
     return (
       <Fragment>
         <Box className={classes.container}>
+          <Typography className={classes.me} variant="h2">
+            <a href="https://tphan25.github.io" className={classes.resume}>
+              Here's a copy of my resume if you're hiring!
+            </a>
+          </Typography>
           <Typography className={classes.text} variant="h2">
             Hello! I'm Tam Phan, a computer science student at Virginia Tech
             (currently finishing up BS, omw to MS). Here is a personal portfolio

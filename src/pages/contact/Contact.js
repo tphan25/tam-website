@@ -13,6 +13,11 @@ export default class Contact extends Component {
           <Typography className={classes.header} variant="h2">
             Contact Me
           </Typography>
+          <Typography className={classes.linkText} variant="h3">
+            <a href="https://tphan25.github.io" className={classes.resume}>
+              Here's a copy of my resume.
+            </a>
+          </Typography>
           <Typography className={classes.text} variant="h3">
             Thanks for checking out my site! I'd love to hear from you
             personally. You can contact me by{" "}
