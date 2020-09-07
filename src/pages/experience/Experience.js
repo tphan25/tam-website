@@ -51,7 +51,7 @@ const ExperienceDescription = (props) => {
         </Typography>
       </Grid>
       <HorizontalRule width={5} height={3} />
-      <Grid item xs={7}>
+      <Grid item xs={12} md={7}>
         <div>
           <Typography className={classes.text} variant="h5">
             {skillsHeader != null ? skillsHeader : `What I did at ${name}:`}
@@ -60,7 +60,7 @@ const ExperienceDescription = (props) => {
         <HorizontalRule width={2} float={"l"} height={3} />
         {displayListItems(skills)}
       </Grid>
-      <Grid item xs={5}>
+      <Grid item container xs={12} md={5}>
         <img
           src={imageSrc}
           alt={imageSrcAlt}
@@ -80,7 +80,7 @@ const PersonalProjectDescription = (props) => {
           {name}
         </Typography>
       </Grid>
-      <Grid container xs={7} direction="column" justify="space-evenly">
+      <Grid container xs={12} md={7} direction="column" justify="space-evenly">
         {paragraphs.map(p => {
           return (
             <Grid>
@@ -90,7 +90,7 @@ const PersonalProjectDescription = (props) => {
             </Grid>)
         })}
       </Grid>
-      <Grid xs={5}>
+      <Grid item container xs={12} md={5}>
         <img
           src={imageSrc}
           alt={imageSrcAlt}

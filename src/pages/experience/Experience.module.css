@@ -11,9 +11,9 @@
 }
 .imgStyle {
   border-radius: 5px;
-  float: right;
   width: 70%;
   height: auto;
+  margin: auto;
 }
 .header {
   text-decoration: underline;
