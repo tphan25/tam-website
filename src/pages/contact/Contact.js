@@ -13,16 +13,11 @@ export default class Contact extends Component {
           <Typography className={classes.header} variant="h2">
             Contact Me
           </Typography>
-          <Typography className={classes.linkText} variant="h3">
-            <a href="https://tphan25.github.io" className={classes.resume}>
-              Here's a copy of my resume.
-            </a>
-          </Typography>
-          <Typography className={classes.text} variant="h3">
+          <Typography className={classes.text} variant="h4">
             Thanks for checking out my site! I'd love to hear from you
             personally. You can contact me by{" "}
             <Box display="inline">
-              <Typography className={classes.linkText} variant="h3">
+              <Typography className={classes.linkText} variant="h4">
                 <a href="mailto:tphan093@gmail.com" className={classes.me}>
                   email
                 </a>
@@ -30,7 +25,7 @@ export default class Contact extends Component {
             </Box>{" "}
             or{" "}
             <Box display="inline">
-              <Typography className={classes.linkText} variant="h3">
+              <Typography className={classes.linkText} variant="h4">
                 <a
                   href="https://www.linkedin.com/in/tam-phan-txp/"
                   className={classes.me}
@@ -41,14 +36,14 @@ export default class Contact extends Component {
             </Box>{" "}
             or check out my{" "}
             <Box display="inline">
-              <Typography className={classes.linkText} variant="h3">
+              <Typography className={classes.linkText} variant="h4">
                 <a href="https://github.com/tphan25/" className={classes.me}>
                   Github.
                 </a>
               </Typography>
             </Box>
           </Typography>
-          <Typography className={classes.text} variant="h3">
+          <Typography className={classes.text} variant="h4">
             Hope to hear from you soon!
           </Typography>
         </Box>

@@ -10,28 +10,28 @@ export default function Footer() {
         <Grid item xs={12}>
           <Box display="flex" textAlign="center" justifyContent="space-between">
             <Container>
-              <Typography variant="h6" className={classes.text}>
+              <Typography variant="h5" className={classes.text}>
                 Learn{" "}
               </Typography>
               <Link to="/about" className={classes.link}>
-                <Typography variant="h6">about me</Typography>
+                <Typography variant="h5">about me</Typography>
               </Link>
             </Container>
 
             <Container>
-              <Typography variant="h6" className={classes.text}>
+              <Typography variant="h5" className={classes.text}>
                 See{" "}
               </Typography>
               <Link to="/experience" className={classes.link}>
-                <Typography variant="h6">what I've done</Typography>
+                <Typography variant="h5">what I've done</Typography>
               </Link>
             </Container>
             <Container>
-              <Typography variant="h6" className={classes.text}>
+              <Typography variant="h5" className={classes.text}>
                 Get{" "}
               </Typography>
               <Link to="/contact" className={classes.link}>
-                <Typography variant="h6">in touch</Typography>
+                <Typography variant="h5">in touch</Typography>
               </Link>
             </Container>
           </Box>
