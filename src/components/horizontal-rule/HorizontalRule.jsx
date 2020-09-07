@@ -13,7 +13,6 @@ const HorizontalRule = (props) => {
             } else {
                 console.error(`${propName} prop should be one of ${possibleValues.join(', ')}.`);
             }
-
             className = `${className} ${classes[`${representationCharacter}${props[propName]}`]}`
         }
     }

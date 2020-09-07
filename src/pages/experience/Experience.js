@@ -44,14 +44,14 @@ function displayListItems(items) {
 const ExperienceDescription = (props) => {
   const { name, preface, skillsHeader, skills, imageSrc, imageSrcAlt } = props;
   return (
-    <Grid container>
-      <Grid xs={12}>
+    <Grid container direction="row">
+      <Grid item xs={12}>
         <Typography className={classes.text} variant="h5">
           {preface}
         </Typography>
       </Grid>
       <HorizontalRule width={5} height={3} />
-      <Grid xs={8}>
+      <Grid item xs={7}>
         <div>
           <Typography className={classes.text} variant="h5">
             {skillsHeader != null ? skillsHeader : `What I did at ${name}:`}
@@ -60,12 +60,11 @@ const ExperienceDescription = (props) => {
         <HorizontalRule width={2} float={"l"} height={3} />
         {displayListItems(skills)}
       </Grid>
-      <Grid xs={4}>
+      <Grid item xs={5}>
         <img
           src={imageSrc}
           alt={imageSrcAlt}
-          width="100%"
-          style={{ borderRadius: "5px", objectFit: "cover" }}
+          className={classes.imgStyle}
         />
       </Grid>
     </Grid>
@@ -81,19 +80,21 @@ const PersonalProjectDescription = (props) => {
           {name}
         </Typography>
       </Grid>
-      <Grid xs={8}>
+      <Grid container xs={7} direction="column" justify="space-evenly">
         {paragraphs.map(p => {
-          return (<Typography className={classes.text} variant="p">
-            {p}
-          </Typography>)
+          return (
+            <Grid>
+              <Typography className={classes.text} variant="p">
+                {p}
+              </Typography>
+            </Grid>)
         })}
       </Grid>
-      <Grid xs={4}>
+      <Grid xs={5}>
         <img
           src={imageSrc}
           alt={imageSrcAlt}
-          width="100%"
-          style={{ borderRadius: "5px", objectFit: "cover" }}
+          className={classes.imgStyle}
         />
       </Grid>
 
@@ -162,7 +163,7 @@ export default function Experience() {
   const researchDescription = {
     name: "VT Echolab",
     preface: `I recently started working on research under professor Sang Won Lee at Virginia Tech, building an collaborative brainstorming environment
-    in AR. I'm working on using OpenCV-Python through a Flask server to process images fed in through HTTP requests via HoloLens.`,
+    in AR. I'm working on scanning in images via HoloLens in a live application for computer vision processing on a server.`,
     skills: [
       "Implementing computer vision algorithms utilizing OpenCV-python, numpy, and PIL",
       "Utilizing a Jupyter notebook with collected data to tune computer vision algorithm",
@@ -184,7 +185,10 @@ export default function Experience() {
       addresses, and return a grouping of the passengers according to
       the input (based on drivers, capacity, etc). I built it because I
       found myself often setting up ride groups for my student
-      organization and wanted to make things faster.`
+      organization and wanted to make things faster.`,
+      `With this project, I went and learned a few more things about building a true
+      end to end application, and am working on setting up a frontend and an authentication
+      so that I can actually deploy it sometime.`
     ],
     imageSrc: carpool,
     imageSrcAlt: "Carpool Creator fake icon"
