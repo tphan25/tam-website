@@ -10,21 +10,20 @@ export default class Home extends Component {
     return (
       <Fragment>
         <Box className={classes.container}>
-          <Typography className={classes.me} variant="h2">
+          <Typography className={classes.me} variant="h4">
             <a href="https://tphan25.github.io" className={classes.resume}>
               Here's a copy of my resume if you're hiring!
             </a>
           </Typography>
-          <Typography className={classes.text} variant="h2">
-            Hello! I'm Tam Phan, a computer science student at Virginia Tech
-            (currently finishing up BS, omw to MS). Here is a personal portfolio
-            site for you to learn more about me if you are interested! You can
+          <Typography className={classes.text} variant="h4">
+            Hello! I'm Tam Phan, a computer science student in my second year of the Accelerated MS CS program at Virginia Tech.
+            Here is a personal portfolio site for you to learn more about me if you are interested! You can
             learn about{" "}
             <Box display="inline" className={classes.links}>
               <Link to="/about" className={classes.me}>
                 <Typography
                   className={[classes.text, classes.links].join(" ")}
-                  variant="h2"
+                  variant="h4"
                 >
                   {"me, "}
                 </Typography>
@@ -32,7 +31,7 @@ export default class Home extends Component {
               <Link to="/projects" className={classes.projects}>
                 <Typography
                   className={[classes.text, classes.links].join(" ")}
-                  variant="h2"
+                  variant="h4"
                 >
                   {"my projects, "}
                 </Typography>
@@ -40,7 +39,7 @@ export default class Home extends Component {
               <Link to="/contact" className={classes.contact}>
                 <Typography
                   className={[classes.text, classes.links].join(" ")}
-                  variant="h2"
+                  variant="h4"
                 >
                   {"or contact me! "}
                 </Typography>
@@ -48,7 +47,7 @@ export default class Home extends Component {
             </Box>
           </Typography>
           <Box display="flex" justifyContent="center" alignItems="center">
-            <img src={me} alt="Myself" style={{ width: "80%" }} />
+            <img src={me} alt="Myself" style={{ width: "40%" }} />
           </Box>
         </Box>
         <Footer />
