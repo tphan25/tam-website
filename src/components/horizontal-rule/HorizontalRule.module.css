@@ -1,0 +1,36 @@
+.w1 {
+    width: 20%;
+}
+.w2 {
+    width: 40%;
+}
+.w3 {
+    width: 60%;
+}
+.w4 {
+    width: 80%;
+}
+.w5 {
+    width: 100%;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.height1 {
+    border-bottom-width: 1px;
+}
+.height2 {
+    border-bottom-width: 2px;
+}
+.height3 {
+    border-bottom-width: 3px;
+}
+.height4 {
+    border-bottom-width: 4px;
+}
+.height5 {
+    border-bottom-width: 5px;
+}

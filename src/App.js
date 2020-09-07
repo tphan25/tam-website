@@ -2,11 +2,11 @@ import React from "react";
 import "./App.css";
 import AppRouter from "./AppRouter";
 import { ThemeProvider } from "@material-ui/styles";
-import { createMuiTheme } from "@material-ui/core";
+import { createMuiTheme, responsiveFontSizes } from "@material-ui/core";
 import indigo from "@material-ui/core/colors/indigo";
 import "typeface-roboto";
 
-const theme = createMuiTheme({
+let theme = createMuiTheme({
   palette: {
     primary: indigo,
     secondary: {
@@ -20,40 +20,10 @@ const theme = createMuiTheme({
     }
   },
   typography: {
-    h1: {
-      "@media (max-width:960px)": {
-        fontSize: "3rem"
-      },
-      "@media (min-width:960px)": {
-        fontSize: "6rem"
-      }
-    },
-    h2: {
-      "@media (max-width:960px)": {
-        fontSize: "2rem"
-      },
-      "@media (min-width:960px)": {
-        fontSize: "4rem"
-      }
-    },
-    h3: {
-      "@media (max-width:960px)": {
-        fontSize: "1.5rem"
-      },
-      "@media (min-width:960px)": {
-        fontSize: "3rem"
-      }
-    },
-    h4: {
-      "@media (max-width:960px)": {
-        fontSize: "1rem"
-      },
-      "@media (min-width:960px)": {
-        fontSize: "2rem"
-      }
-    }
+    fontSize: 18
   }
 });
+theme = responsiveFontSizes(theme);
 
 function App() {
   return (
